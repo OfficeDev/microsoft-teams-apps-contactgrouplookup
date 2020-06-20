@@ -1,0 +1,71 @@
+﻿// <copyright file="add-distribution-list.scss" company="Microsoft">
+// Copyright (c) Microsoft. All rights reserved.
+// </copyright>
+.task-module {
+    .form-container {
+        width: 100%;
+        padding-right: 0.8rem;
+        padding-left: 0.8rem;
+        margin-top: 0.8rem;
+
+        .form-content-container {
+            margin-top: 0.8rem;
+            overflow-y: auto !important;
+            position: absolute;
+            height: 390px;
+            width: 92%;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+    }
+
+    .highlight {
+        font-weight: bold;
+    }
+
+    .footer-container {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding-right: 0.8rem;
+        padding-left: 0.8rem;
+        width: 100%;
+        margin-bottom: 0.8rem;
+
+        .button-container {
+            display: inline;
+            float: right;
+            margin-right: 16px;
+        }
+    }
+
+    .search-not-found {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 2em;
+    }
+}
+
+.welcome-text {
+    color: #6264A7;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.get-started {
+    color: #6264A7;
+    font-size: 14px;
+}
+
+.task-module-border {
+    border-bottom-color: #FFFFFF !important;
+}
+
+.app-container {
+    background: #FFFFFF !important;
+}
+
+.search-div {
+    margin-left: 2% !important;
+    margin-right: 2% !important;
+}

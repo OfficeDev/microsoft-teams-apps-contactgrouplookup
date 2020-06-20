@@ -1,0 +1,165 @@
+﻿// <copyright file="distribution-lists.scss" company="Microsoft">
+// Copyright (c) Microsoft. All rights reserved.
+// </copyright>
+
+.main-component {
+    height: 100% !important;
+    overflow-y: hidden;
+
+    .form-container {
+        width: 100%;
+        padding-right: 0.8rem;
+        padding-left: 0.8rem;
+        margin-top: 0.8rem;
+        overflow-y: hidden;
+        height: 87% !important;
+
+        .form-content-container {
+            margin-top: 0.8rem;
+            margin-bottom: 0.8rem;
+            overflow-y: auto !important;
+            height: 87% !important;
+            width: 98%;
+        }
+    }
+
+    .footer-container {
+        position: relative !important;
+        bottom: 0;
+        left: 0;
+        padding: 0 !important;
+        width: 100%;
+    }
+
+    .footer-container > div {
+        background: #F3F2F1;
+    }
+}
+
+.ui-dropdown__container {
+    width: 10rem;
+}
+
+.paging-segment {
+    padding: 0 !important;
+}
+
+.emptydiv {
+    text-align: center;
+    padding-top: 12%;
+    padding-bottom: 12%;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+.textstyle {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    font-size: 14px !important;
+    color: #252423 !important;
+}
+
+.search-box {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px !important;
+    color: #484644 !important;
+}
+
+.search-box input {
+    background-color: #FFFFFF !important;
+    border-radius: 3px;
+    color: #484644 !important;
+}
+
+.search-box input:-ms-input-placeholder {
+    color: #484644 !important;
+}
+
+.div-style {
+    width: 165px !important;
+}
+
+.bg-color > div {
+    background: #F9F8F7 !important;
+}
+
+.bg-color button {
+    color: #484644 !important;
+}
+
+.bg-color div:hover {
+    cursor: pointer;
+}
+
+.seperator-spacing {
+    margin-left: 0.625rem;
+}
+
+.seperator-spacing:hover {
+    cursor: pointer
+}
+
+.title:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.border-none {
+    border: none !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid #d9d9d9 !important;
+    background-color: #F9F8F7 !important;
+    color: #252423 !important;
+}
+
+.border-none:hover {
+    color: #252423 !important;
+}
+
+.header {
+    border: none !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid #d9d9d9 !important;
+    font-size: 0.75rem !important;
+    background-color: #F9F8F7 !important;
+}
+
+.title-sort-icon {
+    padding-top: 0px;
+    color: #252423 !important;
+}
+
+.title-sort-icon:hover {
+    cursor: pointer;
+}
+
+.disable-pin {
+    color: #c8c6c4;
+}
+
+.main-component {
+    background: #F3F2F1 !important;
+}
+
+.app-container {
+    background: #F3F2F1 !important;
+}
+
+.text-style {
+    color: #252423 !important;
+}
+
+.actions-style {
+    padding-left: 4.5em !important;
+}
+
+.margin-style {
+    margin-right: 0.3rem !important;
+}
+
+.info-icon {
+    padding-left: 1%;
+    font-size: small;
+}

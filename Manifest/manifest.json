@@ -1,0 +1,47 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.5",
+    "version": "1.0.0",
+    "id": "4b8d2936-4e5f-4563-83ca-4bdad686c788",
+    "packageName": "com.microsoft.teams.apptemplates.contactgrouplookup",
+    "developer": {
+        "name": "<<CompanyName>>",
+        "websiteUrl": "<<WebsiteUrl>>",
+        "privacyUrl": "<<PrivacyUrl>>",
+        "termsOfUseUrl": "<<TermsOfUseUrl>>"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "Contact Group Lookup",
+        "full": "Contact Group Lookup"
+    },
+  "description": {
+    "short": "The Contact Group Lookup app helps interact with members of a contact group",
+    "full": "The Contact Group Lookup app helps users quickly browse through members of a contact group, see their current status, and start an individual or group chat with them. Frequently used contact groups can be pinned to the top so that they can be quickly accessed"
+  },
+    "accentColor": "#FFFFFF",
+    "staticTabs": [
+        {
+            "entityId": "Home",
+            "name": "Home",
+            "contentUrl": "https://<<Appdomain>>/dls",
+            "scopes": [
+                "personal"
+            ]
+        }
+    ],
+    "permissions": [
+        "identity"
+    ],
+    "validDomains": [
+        "<<Appdomain>>",
+        "<<TenantName>>"
+    ],
+    "webApplicationInfo": {
+        "id": "<<App-Client-ID>>",
+        "resource": "api://<<Appdomain>>/<<App-Client-ID>>"
+    }
+}
