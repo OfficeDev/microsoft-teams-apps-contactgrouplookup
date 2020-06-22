@@ -63,7 +63,7 @@
         "2",
         "3"
       ],
-      "defaultValue": "1",
+      "defaultValue": "2",
       "metadata": {
         "description": "The size of the hosting plan (small, medium, or large)."
       }
@@ -343,16 +343,14 @@
                 "Https"
               ],
               "patternsToMatch": [
-                "/api/*"
+                "/*"
               ],
               "routeConfiguration": {
-                "@odata.type": "#Microsoft.Azure.FrontDoor.Models.FrontdoorRedirectConfiguration",
-                "customFragment": null,
-                "customHost": "[variables('appDomain')]",
-                "customPath": "",
-                "redirectProtocol": "HttpsOnly",
-                "customQueryString": null,
-                "redirectType": "PermanentRedirect"
+                "@odata.type": "#Microsoft.Azure.FrontDoor.Models.FrontdoorForwardingConfiguration",
+                "forwardingProtocol": "HttpsOnly",
+                "backendPool": {
+                  "id": "[resourceId('Microsoft.Network/frontDoors/backendPools', variables('frontDoorName'), 'backendPool1')]"
+                }
               },
               "enabledState": "Enabled"
             }
