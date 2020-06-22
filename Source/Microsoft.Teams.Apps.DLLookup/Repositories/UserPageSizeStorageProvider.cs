@@ -46,7 +46,7 @@ namespace Microsoft.Teams.Apps.DLLookup.Repositories
             try
             {
                 await this.EnsureInitializedAsync();
-                TableOperation operation = TableOperation.Retrieve<FavoriteDistributionListMemberTableEntity>("default", userObjectId);
+                TableOperation operation = TableOperation.Retrieve<UserPageSizeChoiceTableEntity>("default", userObjectId);
                 TableResult result = await this.DlLookupCloudTable.ExecuteAsync(operation);
                 return result.Result as UserPageSizeChoiceTableEntity;
             }
