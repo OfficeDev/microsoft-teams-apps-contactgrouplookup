@@ -3,51 +3,51 @@ page_type: sample
 languages:
 - csharp
 products:
-- dotnet
-description: "Add 150 character max description"
-urlFragment: "update-this-to-unique-url-stub"
+- office-teams
+description: The Contact Group Lookup app helps interact with members of a contact group
+urlFragment: microsoft-teams-app-contactgrouplookup
 ---
 
-# Official Microsoft Sample
+# Contact Group Lookup App Template
 
-<!-- 
-Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
+| [Documentation](https://github.com/OfficeDev/microsoft-teams-app-contactgrouplookup/wiki/Home) | [Deployment guide](https://github.com/OfficeDev/microsoft-teams-app-contactgrouplookup/wiki/Deployment-Guide) | [Architecture](https://github.com/OfficeDev/microsoft-teams-app-contactgrouplookup/wiki/Solution-Overview) |
+| ---- | ---- | ---- |
 
-Guidance on onboarding samples to docs.microsoft.com/samples: https://review.docs.microsoft.com/help/onboard/admin/samples/process/onboarding?branch=master
+ Contact Group (sometimes referred to as a distribution list) is very useful for organizations to manage communication with a group of individuals. Examples of contact groups include members of an emergency response team at a hospital, employees who work in a particular building, or employees who share a common hobby.
+The Contact Group Lookup app makes it easier to interact with members of a contact group directly from Microsoft Teams. Using the app, you can quickly view and chat with members, see their status on Teams, and even start a group chat with multiple members of the Contact Group.
 
-Taxonomies for products and languages: https://review.docs.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=master
--->
+An example workflow in the app is described below:
+ - A user starts by opening the Contact Group Lookup app and adds their preferred contact groups to the app.
+ - They pin important contact groups to the top of the list by clicking the pin icon
+ - The user then clicks the name of the contact group of interest
+ -  The user sorts the list by status and starts a group chat with members who are online.
 
-Give a short description for your sample here. What does it do and why is it important?
+The following images show examples of the user interface of the app:
 
-## Contents
+![Search contact groups](https://github.com/OfficeDev/microsoft-teams-app-contactgrouplookup/wiki/Images/SearchContactGroups.png)
 
-Outline the file contents of the repository. It helps users navigate the codebase, build configuration and any related assets.
+![Favorited contact groups](https://github.com/OfficeDev/microsoft-teams-app-contactgrouplookup/wiki/Images/FavoritesScreen.png)
 
-| File/folder       | Description                                |
-|-------------------|--------------------------------------------|
-| `src`             | Sample source code.                        |
-| `.gitignore`      | Define what to ignore at commit time.      |
-| `CHANGELOG.md`    | List of changes to the sample.             |
-| `CONTRIBUTING.md` | Guidelines for contributing to the sample. |
-| `README.md`       | This README file.                          |
-| `LICENSE`         | The license for the sample.                |
+![Initiate Teams chat with group members](https://github.com/OfficeDev/microsoft-teams-app-contactgrouplookup/wiki/Images/InitiateChat.png)
 
-## Prerequisites
 
-Outline the required components and tools that a user might need to have on their machine in order to run the sample. This can be anything from frameworks, SDKs, OS versions or IDE releases.
+## Legal notice
 
-## Setup
+This app template is provided under the [MIT License](https://github.com/OfficeDev/microsoft-teams-app-contactgrouplookup/blob/master/LICENSE) terms.  In addition to these terms, by using this app template you agree to the following:
 
-Explain how to prepare the sample once the user clones or downloads the repository. The section should outline every step necessary to install dependencies and set up any settings (for example, API keys and output folders).
+-	You are responsible for complying with all applicable privacy and security regulations related to use, collection and handling of any personal data by your app.  This includes complying with all internal privacy and security policies of your organization if your app is developed to be sideloaded internally within your organization.
 
-## Running the sample
+-	Where applicable, you may be responsible for data related incidents or data subject requests for data collected through your app.
 
-Outline step-by-step instructions to execute the sample and see its output. Include steps for executing the sample from the IDE, starting specific services in the Azure portal or anything related to the overall launch of the code.
+-	Any trademarks or registered trademarks of Microsoft in the United States and/or other countries and logos included in this repository are the property of Microsoft, and the license for this project does not grant you rights to use any Microsoft names, logos or trademarks outside of this repository.  Microsoft’s general trademark guidelines can be found [here](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general.aspx).
 
-## Key concepts
+-	Use of this template does not guarantee acceptance of your app to the Teams app store.  To make this app available in the Teams app store, you will have to comply with the [submission and validation process](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/appsource/publish), and all associated requirements such as including your own privacy statement and terms of use for your app.
 
-Provide users with more context on the tools and services used in the sample. Explain some of the code that is being used and how services interact with each other.
+## Getting started
+
+Begin with the [Solution overview](https://github.com/OfficeDev/microsoft-teams-app-contactgrouplookup/wiki/Solution-overview) to read about what the app does and how it works.
+
+When you're ready to try out Scrums for Channels, or to use it in your own organization, follow the steps in the [Deployment guide](https://github.com/OfficeDev/microsoft-teams-app-contactgrouplookup/wiki/Deployment-Guide).
 
 ## Contributing
 

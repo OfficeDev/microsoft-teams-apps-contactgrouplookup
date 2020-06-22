@@ -1,0 +1,64 @@
+{
+  "name": "dllookup-client-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "1.2.28",
+    "@fortawesome/free-solid-svg-icons": "5.13.0",
+    "@fortawesome/react-fontawesome": "0.1.10",
+    "@microsoft/teams-js": "1.6.0",
+    "@stardust-ui/react": "0.40.7",
+    "axios": "0.19.2",
+    "browserslist": "4.12.0",
+    "caniuse-lite": "1.0.30001079",
+    "font-awesome": "4.7.0",
+    "i18next": "19.4.5",
+    "i18next-xhr-backend": "3.2.2",
+    "lodash": "4.17.15",
+    "msteams-ui-components-react": "0.8.4",
+    "node-sass": "4.14.1",
+    "office-ui-fabric-react": "7.118.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-i18next": "11.5.0",
+    "react-redux": "7.2.0",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "3.4.1",
+    "redux": "4.0.5",
+    "redux-thunk": "2.3.0",
+    "typescript": "3.9.5",
+    "typestyle": "2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "5.13.0",
+    "@types/react-redux": "7.1.9",
+    "@types/jest": "25.2.3",
+    "@types/lodash": "4.14.155",
+    "@types/node": "14.0.12",
+    "@types/react": "16.9.35",
+    "@types/react-dom": "16.9.8",
+    "@types/react-router-dom": "5.1.5",
+    "@types/redux": "3.6.31"
+  }
+}
