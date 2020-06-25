@@ -47,7 +47,7 @@ This app template is provided under the [MIT License](https://github.com/OfficeD
 
 Begin with the [Solution overview](https://github.com/OfficeDev/microsoft-teams-app-contactgrouplookup/wiki/Solution-overview) to read about what the app does and how it works.
 
-When you're ready to try out Scrums for Channels, or to use it in your own organization, follow the steps in the [Deployment guide](https://github.com/OfficeDev/microsoft-teams-app-contactgrouplookup/wiki/Deployment-Guide).
+When you're ready to try out Contact Group Lookup app, or to use it in your own organization, follow the steps in the [Deployment guide](https://github.com/OfficeDev/microsoft-teams-app-contactgrouplookup/wiki/Deployment-Guide).
 
 ### Known issue:
 The app is currently not supported on iOS devices. We are actively working on fixing the issue and will update the repo as soon as it is available.
