@@ -147,7 +147,7 @@ namespace Microsoft.Teams.Apps.DLLookup.Repositories
                         for (int i = 0; i < peoplePresenceResults.Count; i++)
                         {
                             this.memoryCache.Set(peoplePresenceResults[i].Id, peoplePresenceResults[i], options);
-                            if (this.onlinePresenceOptions.Contains(peoplePresenceResults[i].Availability.ToUpper()))
+                            if (this.onlinePresenceOptions.Contains(peoplePresenceResults[i].Availability))
                             {
                                 onlineMembersCount++;
                             }
