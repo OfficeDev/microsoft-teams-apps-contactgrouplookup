@@ -8,7 +8,7 @@
     "@fortawesome/react-fontawesome": "0.1.10",
     "@microsoft/teams-js": "1.6.0",
     "@stardust-ui/react": "0.40.7",
-    "axios": "0.19.2",
+    "axios": "0.21.1",
     "browserslist": "4.12.0",
     "caniuse-lite": "1.0.30001079",
     "font-awesome": "4.7.0",
