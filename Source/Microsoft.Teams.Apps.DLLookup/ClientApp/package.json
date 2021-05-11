@@ -14,7 +14,7 @@
     "font-awesome": "4.7.0",
     "i18next": "19.4.5",
     "i18next-xhr-backend": "3.2.2",
-    "lodash": "4.17.15",
+    "lodash": "4.17.21",
     "msteams-ui-components-react": "0.8.4",
     "node-sass": "4.14.1",
     "office-ui-fabric-react": "7.118.0",
