@@ -7,8 +7,9 @@
 */
 .default-container {
     height: 100vh !important;
-/*        background-color: #F3F2F1;*/
-        background-color: #FFFFFF;
+    /*        background-color: #F3F2F1;*/
+    background-color: #FFFFFF;
+
     .configContainer {
         background-color: #fff;
     }
@@ -103,6 +104,10 @@
 .darkContainer {
     background-color: #201f1f;
     height: 100vh !important;
+
+    .app-container {
+        background: #292929 !important;
+    }
 
     .configContainer {
         background-color: #2d2c2c;
@@ -341,6 +346,7 @@
     width: 100%;
     overflow: hidden;
     height: 100%;
+
     .primaryBtn {
         min-width: 9.6rem;
         height: 3.2rem;
@@ -455,8 +461,8 @@
     }
 }
 
-.textAlignCenter{
-    text-align:center;
+.textAlignCenter {
+    text-align: center;
 }
 
 /* width */
@@ -481,5 +487,12 @@
 ::-webkit-scrollbar-thumb:hover {
     ::-webkit-scrollbar {
         width: 1rem;
+    }
+}
+
+.highContrastContainer {
+
+    .app-container {
+        background: #000000 !important;
     }
 }

@@ -10,6 +10,7 @@ namespace Microsoft.Teams.Apps.DLLookup.Controllers
     using System.Web;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
+    using Microsoft.Teams.Apps.DLLookup.Models;
 
     /// <summary>
     /// Controller for the authentication sign in data.
@@ -35,24 +36,21 @@ namespace Microsoft.Teams.Apps.DLLookup.Controllers
         /// <summary>
         /// Get authentication URL with configuration options.
         /// </summary>
-        /// <param name="windowLocationOriginDomain">Window location origin domain.</param>
-        /// <param name="loginHint">User Principal name value.</param>
+        /// <param name="authenticationInfo">Instance of athentication info model to get window origin and login hint details.</param>
         /// <returns>Consent URL.</returns>
-        [HttpGet("GetAuthenticationUrlWithConfiguration")]
-        public string GetAuthenticationUrlWithConfiguration(
-            [FromQuery]string windowLocationOriginDomain,
-            [FromQuery]string loginHint)
+        [HttpPost("GetAuthenticationUrlWithConfiguration")]
+        public string GetAuthenticationUrlWithConfiguration([FromBody] AuthenticationInfo authenticationInfo)
         {
             Dictionary<string, string> authDictionary = new Dictionary<string, string>
             {
-                ["redirect_uri"] = $"https://{windowLocationOriginDomain}/signin-simple-end",
+                ["redirect_uri"] = $"https://{authenticationInfo.WindowLocationOriginDomain}/signin-simple-end",
                 ["client_id"] = this.clientId,
                 ["response_type"] = "id_token",
                 ["response_mode"] = "fragment",
                 ["scope"] = this.graphScope,
                 ["nonce"] = Guid.NewGuid().ToString(),
                 ["state"] = Guid.NewGuid().ToString(),
-                ["login_hint"] = loginHint,
+                ["login_hint"] = authenticationInfo.LoginHint,
             };
             List<string> authList = authDictionary
                 .Select(p => $"{p.Key}={HttpUtility.UrlEncode(p.Value)}")

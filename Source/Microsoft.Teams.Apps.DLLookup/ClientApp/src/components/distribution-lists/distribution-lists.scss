@@ -67,16 +67,6 @@
     color: #484644 !important;
 }
 
-.search-box input {
-    background-color: #FFFFFF !important;
-    border-radius: 3px;
-    color: #484644 !important;
-}
-
-.search-box input:-ms-input-placeholder {
-    color: #484644 !important;
-}
-
 .div-style {
     width: 165px !important;
 }
@@ -147,10 +137,6 @@
     background: #F3F2F1 !important;
 }
 
-.text-style {
-    color: #252423 !important;
-}
-
 .actions-style {
     padding-left: 4.5em !important;
 }
@@ -162,4 +148,105 @@
 .info-icon {
     padding-left: 1%;
     font-size: small;
+}
+
+.default-container {
+
+    .search-box input {
+        background-color: #FFFFFF !important;
+        border-radius: 3px;
+        color: #484644 !important;
+    }
+
+    .search-box input:-ms-input-placeholder {
+        color: #484644 !important;
+    }
+
+    .text-style {
+        color: #252423 !important;
+    }
+}
+
+.darkContainer {
+
+    .main-component {
+        background: #292929 !important;
+
+        .form-content-container {
+            .textstyle {
+                color: rgb(200, 198, 196) !important;
+            }
+        }
+
+        .textstyle {
+            color: rgb(200, 198, 196) !important;
+        }
+    }
+
+    .header {
+        border-bottom: 1px solid #292929 !important;
+        background-color: rgb(32, 31, 31) !important;
+
+        .dark-theme {
+            color: rgb(200, 198, 196) !important;
+        }
+    }
+
+    .border-none {
+        border-bottom: 1px solid #292929 !important;
+        background-color: rgb(32, 31, 31) !important;
+        color: rgb(200, 198, 196) !important;
+    }
+
+    .header {
+        color: #FFFFFF !important;
+    }
+
+    .main-component {
+        .footer-container div {
+            background: #292929 !important;
+        }
+    }
+}
+
+.highContrastContainer {
+
+    .main-component {
+        background: #0f0f0f !important;
+
+        .form-content-container {
+            .textstyle {
+                color: rgb(200, 198, 196) !important;
+            }
+        }
+
+        .textstyle {
+            color: rgb(200, 198, 196) !important;
+        }
+    }
+
+    .header {
+        border-bottom: 1px solid #292929 !important;
+        background-color: rgb(32, 31, 31) !important;
+
+        .dark-theme {
+            color: rgb(200, 198, 196) !important;
+        }
+    }
+
+    .border-none {
+        border-bottom: 1px solid #292929 !important;
+        background-color: rgb(32, 31, 31) !important;
+        color: rgb(200, 198, 196) !important;
+    }
+
+    .header {
+        color: #FFFFFF !important;
+    }
+
+    .main-component {
+        .footer-container div {
+            background: #0f0f0f !important;
+        }
+    }
 }
