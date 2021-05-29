@@ -77,7 +77,7 @@ export const createUserPageSizeChoice = async (payload: {}): Promise<AxiosRespon
 }
 
 export const getAuthenticationMetadata = async (windowLocationOriginDomain: string, loginHint: string): Promise<AxiosResponse<string>> => {
-    const payload = { windowLocationOriginDomain: encodeURIComponent(windowLocationOriginDomain), loginhint: loginHint };
+    const payload = { windowLocationOriginDomain: windowLocationOriginDomain, loginhint: loginHint };
     let url = `${baseAxiosUrl}/authenticationMetadata/GetAuthenticationUrlWithConfiguration`;
     return await axios.post(url, payload);
 }
