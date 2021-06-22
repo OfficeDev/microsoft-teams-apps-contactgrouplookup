@@ -17,7 +17,7 @@ export const getFavoriteDistributionLists = async (): Promise<AxiosResponse<IDis
 }
 
 export const getADDistributionLists = async (query: string): Promise<AxiosResponse<IADDistributionList[]>> => {
-    let url = baseAxiosUrl + "/distributionlists/getDistributionList?query=" + query;
+    let url = baseAxiosUrl + "/distributionlists/getDistributionList?query=" + encodeURIComponent(query);
     return await axios.get(url);
 }
 
@@ -77,8 +77,9 @@ export const createUserPageSizeChoice = async (payload: {}): Promise<AxiosRespon
 }
 
 export const getAuthenticationMetadata = async (windowLocationOriginDomain: string, loginHint: string): Promise<AxiosResponse<string>> => {
-    let url = `${baseAxiosUrl}/authenticationMetadata/GetAuthenticationUrlWithConfiguration?windowLocationOriginDomain=${windowLocationOriginDomain}&loginhint=${loginHint}`;
-    return await axios.get(url, undefined, false);
+    const payload = { windowLocationOriginDomain: windowLocationOriginDomain, loginhint: loginHint };
+    let url = `${baseAxiosUrl}/authenticationMetadata/GetAuthenticationUrlWithConfiguration`;
+    return await axios.post(url, payload);
 }
 
 export const getClientId = async (): Promise<AxiosResponse<string>> => {

@@ -72,7 +72,7 @@ namespace Microsoft.Teams.Apps.DLLookup.Helpers
                 var response = await this.graphClient
                 .Groups
                 .Request()
-                .Filter($"startswith(displayName, '{query}')")
+                .Filter($"startswith(displayName, '{Uri.EscapeDataString(query)}')")
                 .GetAsync();
 
                 var distributionList = response.
