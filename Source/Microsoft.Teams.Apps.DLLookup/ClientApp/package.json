@@ -9,7 +9,7 @@
     "@microsoft/teams-js": "1.6.0",
     "@stardust-ui/react": "0.40.7",
     "axios": "0.19.2",
-    "browserslist": "4.12.0",
+    "browserslist": "4.16.5",
     "caniuse-lite": "1.0.30001079",
     "font-awesome": "4.7.0",
     "i18next": "19.4.5",
