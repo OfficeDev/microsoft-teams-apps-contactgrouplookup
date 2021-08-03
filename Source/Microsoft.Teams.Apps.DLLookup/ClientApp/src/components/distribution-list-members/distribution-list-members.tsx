@@ -82,7 +82,7 @@ class DistributionListMembers extends React.Component<IDistributionListMembersPr
     private historyArray: string[];
     private batchRequestLimit: number = 40;
     private groupChatMembersLimit: number = 100;
-    private defaultPageSize: number = 20;
+    private defaultPageSize: number = 400;
     private notYetFetchedText: string = "Not yet fetched";
     private readonly taskModulePositiveResponseString: string = "YES";
     private readonly availabilityStatusOnline: string = "Available";
@@ -528,8 +528,9 @@ class DistributionListMembers extends React.Component<IDistributionListMembersPr
 
     //"Render Method"
     public render(): JSX.Element {
+
         //Page size drop down values.
-        let pageSize = [20, 50, 100];
+        let pageSize = [400];
         let pageNumber: number = this.state.activePage;
         let index = pageSize.indexOf(this.state.pageSize);
         let items = []; //Populate grid
@@ -646,17 +647,17 @@ class DistributionListMembers extends React.Component<IDistributionListMembersPr
                             {navigation}
                         </Flex>
                         <Flex gap="gap.small">
-                            <div className="div-style">
+                            {/*<div className="div-style">
                                 <Dropdown
                                     className="bg-color"
                                     fluid={true}
                                     items={pageSize}
-                                    placeholder={this.localize('pageSizeMembers')}
+                                   
                                     highlightedIndex={index}
-                                    onSelectedChange={this.setPageSize}
+                                    
                                     checkable
                                 />
-                            </div>
+                            </div>*/}
                             <FlexItem>
                                 <Input icon="search" className="search-box" placeholder={this.localize("search")} onChange={this.search} />
                             </FlexItem>

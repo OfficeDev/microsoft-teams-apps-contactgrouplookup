@@ -39,17 +39,31 @@ class App extends React.Component<{}, IAppState> {
         });
     }
 
+    /*
+        Bug: 3 - uses can choose dark mode (for night view), but that hides many icons.. need to disable night view option..
+        Resolution: Prevent darkContainer CSS from being used. 
+        Future: Change CSS to show icons and text. */
+
     public setThemeComponent = () => {
+        // if (this.state.theme === "dark") {
+        //     return (
+        //         <Provider theme={themes.teamsDark}>
+        //             <div className="darkContainer">
+        //                 {this.getAppDom()}
+        //             </div>
+        //         </Provider>
+        //     );
+        // }
         if (this.state.theme === "dark") {
             return (
-                <Provider theme={themes.teamsDark}>
-                    <div className="darkContainer">
+                <Provider theme={themes.teams}>
+                    <div className="default-container">
                         {this.getAppDom()}
                     </div>
                 </Provider>
             );
         }
-        else if (this.state.theme === "contrast") {
+        if (this.state.theme === "contrast") {
             return (
                 <Provider theme={themes.teamsHighContrast}>
                     <div className="highContrastContainer">
