@@ -7,7 +7,7 @@ products:
 description: The Contact Group Lookup app helps interact with members of a contact group
 urlFragment: microsoft-teams-app-contactgrouplookup
 ---
-
+### Note: This is a sample app for Microsoft Teams platform capabilities. The code is not actively managed by Microsoft. The complete source code is available, which allows you to explore it in detail or fork the code and alter it to meet your specific requirements. The source code in this repository may contain links and dependencies to other source code and libraries. Developers are advised to validate all dependencies and update and integrate the latest versions as appropriate. Deployment and support of apps based on this code will be the responsibility of the developers.
 # Contact Group Lookup App Template
 
 | [Documentation](https://github.com/OfficeDev/microsoft-teams-app-contactgrouplookup/wiki/Home) | [Deployment guide](https://github.com/OfficeDev/microsoft-teams-app-contactgrouplookup/wiki/Deployment-Guide) | [Architecture](https://github.com/OfficeDev/microsoft-teams-app-contactgrouplookup/wiki/Solution-Overview) |
