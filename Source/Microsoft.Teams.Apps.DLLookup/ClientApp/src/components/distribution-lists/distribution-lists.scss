@@ -15,13 +15,17 @@
         height: 87% !important;
 
         .form-content-container {
-            margin-top: 0.8rem;
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.5rem;
+            margin-top: 0.1rem !important;
             overflow-y: auto !important;
+            overflow-x: auto !important;
             height: 87% !important;
-            width: 98%;
+            width: 100%;
+            padding-left: 35px;
+            padding-right: 35px;
         }
     }
+
 
     .footer-container {
         position: relative !important;

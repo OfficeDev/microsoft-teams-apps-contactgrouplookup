@@ -36,7 +36,7 @@
   "noSearchResults": "No results found. Try searching again.",
   "unauthorizedErrorMessage": "Something went wrong. Try again in a few minutes.",
   "forbiddenErrorMessage": "Permissions needed. Contact your IT admin to request access.",
-  "generalErrorMessage": "Something went wrong. Try again in a few minutes. If the problem persists, contact your IT admin.",
+  "generalErrorMessage": "Something went wrong. Try again in a few minutes. If the problem persists, please contact your IT admin.",
   "groupChatMessage": "Can we start a smaller group chat?",
   "groupChatCountMessage": "You selected more than 100 members to chat with. Currently, group chats in Teams are limited to 100 people.",
   "groupChatRecentMembers": "Would you like us to start a chat now with the 100 members who are currently online?",

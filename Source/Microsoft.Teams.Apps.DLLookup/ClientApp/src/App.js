@@ -41,12 +41,25 @@ var App = /** @class */ (function (_super) {
                 });
             });
         };
+        /*
+            Bug: 3 - uses can choose dark mode (for night view), but that hides many icons.. need to disable night view option..
+            Resolution: Prevent darkContainer CSS from being used.
+            Future: Change CSS to show icons and text. */
         _this.setThemeComponent = function () {
+            // if (this.state.theme === "dark") {
+            //     return (
+            //         <Provider theme={themes.teamsDark}>
+            //             <div className="darkContainer">
+            //                 {this.getAppDom()}
+            //             </div>
+            //         </Provider>
+            //     );
+            // }
             if (_this.state.theme === "dark") {
-                return (React.createElement(react_1.Provider, { theme: react_1.themes.teamsDark },
-                    React.createElement("div", { className: "darkContainer" }, _this.getAppDom())));
+                return (React.createElement(react_1.Provider, { theme: react_1.themes.teams },
+                    React.createElement("div", { className: "default-container" }, _this.getAppDom())));
             }
-            else if (_this.state.theme === "contrast") {
+            if (_this.state.theme === "contrast") {
                 return (React.createElement(react_1.Provider, { theme: react_1.themes.teamsHighContrast },
                     React.createElement("div", { className: "highContrastContainer" }, _this.getAppDom())));
             }
